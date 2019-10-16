@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 	# Cocoapods also has a bug with `exclude_files` that prevents that more elegant solution in a single subspec.
 	# This means that `ss.resources` needs to be explicitly enumerated as well, which is not great.
 	
-	s.default_subspec = 'include-cell-xibs'
+	s.default_subspec = 'xibs-without-cells'
 	
 	s.subspec 'core-resources' do |ss|
 		ss.source_files = 'JSQMessagesViewController/**/*.{h,m}'
